@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!preloader) return;
 
     // Tentukan waktu minimum tampilan preloader (misal: 0.5 detik)
-    const MIN_LOAD_TIME = 1500; // dalam milidetik (ms)
+    const MIN_LOAD_TIME = 300; // dalam milidetik (ms)
     let loadStartTime = Date.now();
     
     // Fungsi untuk menyembunyikan preloader
