@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk - SMK Negeri 5 Kolaka Utara</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="./css/pendaftaran style.css"> 
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-contact">
+                <span class="contact-item"><i class="fas fa-phone-alt"></i> 0405-21xxxx</span>
+                <span class="contact-item"><i class="fas fa-map-marker-alt"></i> SMKN 5 Kolaka Utara, Sulawesi Tenggara</span>
+            </div>
+            <div class="top-bar-socials">
+                <span class="language-dropdown">
+                    INDONESIA <i class="fas fa-caret-down"></i>
+                </span>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <header class="main-header">
+        <div class="container main-nav-content">
+            <a href="./index.html#home" class="logo-kc-style">SMKN 5 KOLUT</a>
+            <nav class="main-nav-menu desktop-menu">
+                <ul>
+                    <li><a href="./index.html#home">Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="./index.html#jurusan">Jurusan <i class="fas fa-chevron-down dropdown-arrow"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">TKJ</a></li>
+                            <li><a href="#">RPL</a></li>
+                            <li><a href="#">TKR</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./index.html#profil">Profil</a></li>
+                    <li><a href="./index.html#berita">Berita</a></li>
+                    <li><a href="./index.html#kontak">Kontak Kami</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Cari...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="./masuk.html" class="btn btn-kc-gradient">Masuk</a>
+            </div>
+            <div class="menu-toggle-kc" id="menu-toggle-kc">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+<div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="mobile-menu-content">
+        <div class="close-btn-kc" id="closeMenu">
+            <i class="fas fa-times"></i>
+        </div>
+        
+        <a href="./index.html#home" class="logo-kc-style mobile-logo-inside">SMKN 5 KOLUT</a>
+        
+        <div class="mobile-search-box">
+            <input type="text" placeholder="Cari...">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+        
+        <nav class="mobile-nav-list">
+            <ul>
+                <li><a href="./index.html#home">Beranda</a></li>
+                <li><a href="./index.html#jurusan">Jurusan</a></li>
+                <li><a href="./index.html#profil">Profil</a></li>
+                <li><a href="./index.html#berita">Berita</a></li>
+                <li><a href="./index.html#kontak">Kontak Kami</a></li>
+            </ul>
+        </nav>
+        
+        <div class="mobile-auth-buttons">
+            <a href="./masuk.html" class="btn btn-mobile-masuk">Masuk</a>
+            <a href="./pendaftaran.html" class="btn btn-mobile-registrasi">Registrasi</a>
+        </div>
+        
+        <div class="mobile-socials-kc">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </div>
+</div>
+    <main>
+        <section class="login-page">
+            <div class="container login-container">
+
+                <div class="login-split">
+
+                    <div class="login-illustration">
+                        <img src="./img/Group 45 (1).svg" alt="Ilustrasi Masuk/Login">
+                    </div>
+
+                    <div class="login-form-wrapper">
+                        <div class="login-header">
+                            <h1>Masuk</h1>
+                            <p>Dapatkan informasi terbaru dan dukungan konsultasi!</p>
+                        </div>
+
+                        <form action="PROSES_LOGIN_ANDA" method="POST">
+                            
+                            <div class="form-group">
+                                <label for="email_login">Email</label>
+                                <input type="email" id="email_login" name="email" class="form-control" placeholder="Email Anda" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password_login">Kata sandi</label>
+                                <input type="password" id="password_login" name="password" class="form-control" placeholder="********" required>
+                            </div>
+                            
+                            <div class="form-options">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                    Ingat Saya
+                                </label>
+                                <a href="#" class="forgot-password">Lupa Kata Sandi?</a>
+                            </div>
+
+                            <button type="submit" class="form-submit-btn btn-login-gradient">Masuk</button>
+                        
+                            <div class="signup-link-wrapper">
+                                <p>Belum punya akun? <a href="./pendaftaran.html">Buat Akun</a></p>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </section>
+        </main>
+
+    <footer class="footer-kc-style">
+        <div class="container footer-content-kc">
+            <div class="footer-col footer-col-info">
+                <div class="footer-logo">SMKN 5 KOLUT</div>
+                <p class="footer-description">
+                    SMK Negeri 5 Kolaka Utara berkomitmen mencetak SDM unggul, siap kerja, dan siap bersaing di era industri 4.0 melalui pendidikan vokasi berbasis kompetensi.
+                </p>
+                <div class="footer-socials-kc">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <a href="./index.html#kontak" class="btn-hubungi-kami">Hubungi Kami &rightarrow;</a>
+            </div>
+
+            <div class="footer-col footer-col-links">
+                <h4 class="footer-title-kc">Jurusan Kami</h4>
+                <ul class="footer-list-kc">
+                    <li><a href="./index.html#jurusan">Teknik Komputer & Jaringan</a></li>
+                    <li><a href="./index.html#jurusan">Tata Busana</a></li>
+                    <li><a href="./index.html#jurusan">Agribisnis Tanaman Pangan & Hortikultura</a></li>
+                    <li><a href="./index.html#jurusan">Geologi Pertambangan</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-col-links">
+                <h4 class="footer-title-kc">Tautan Terkait</h4>
+                <ul class="footer-list-kc">
+                    <li><a href="./index.html#profil">Profil Sekolah</a></li>
+                    <li><a href="./index.html#berita">Berita & Kegiatan</a></li>
+                    <li><a href="#">Guru & Staff</a></li>
+                    <li><a href="#">Galeri</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-col-contact">
+                <h4 class="footer-title-kc">Kontak Kami</h4>
+                <p>No. Telp: 0405 - 21xxxx</p>
+                <p>Email: <a href="mailto:smk5kolut@sekolah.id">smk5kolut@sekolah.id</a></p>
+                
+                <h4 class="footer-title-kc newsletter-title">Newsletter</h4>
+                <p>Berlangganan untuk mengikuti informasi dan kegiatan terbaru dari SMKN 5 Kolaka Utara!</p>
+                
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Alamat email" required>
+                    <button type="submit" class="btn-submit-kc">Submit</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom-kc">
+            <div class="container footer-bottom-content-kc">
+                <div class="footer-policy-links">
+                    <a href="#">Tentang Kami</a>
+                    <a href="#">Kebijakan Privasi</a>
+                    <a href="#">Syarat dan Penggunaan</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <p class="copyright-text">© 2025 SMKN5KOLUT. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/pendaftaran.js"></script>
+</body>
+</html>
